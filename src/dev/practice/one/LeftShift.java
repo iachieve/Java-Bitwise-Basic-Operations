@@ -5,7 +5,6 @@ public class LeftShift {
         int a = 15;
         int b = 27;
 
-
         // 15b=> 0000 1111
         //       0011 1100
         // 32+16+8+4 = 60
