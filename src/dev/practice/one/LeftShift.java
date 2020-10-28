@@ -10,6 +10,6 @@ public class LeftShift {
         // 32+16+8+4 = 60
 
         int leftShifted = a << 2;
-        System.out.println("right shift 2: " + leftShifted);
+        System.out.println("left shift 2: " + leftShifted);
     }
 }

@@ -7,10 +7,10 @@ public class RightShift {
 
 
         // 15b=> 0000 1111
-        //       0011 1100
-        // 32+16+8+4 = 60
+        //       0000 0011
+        // 1 + 2 = 3
 
-        int rightShifted = a << 2;
+        int rightShifted = a >> 2;
         System.out.println("right shift 2: " + rightShifted);
     }
 }
