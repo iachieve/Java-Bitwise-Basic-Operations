@@ -34,14 +34,45 @@ package dev.practice.challenges;
 
 
     solution using bit manipulation
-    input: nums = [3,0,1]
-    3:0011  0:0000 1:0001
-        0011
-      ^ 0000
-     ->
+        we initialize an integer to n and XOR it with every index and value, we will be left with the missing number.
+        Consider the following example (the values have been sorted for intuitive convenience, but need not be):
+
+
+    Index	0	1	2	3
+    Value	0	1	3	4
+    missing     = 4 ^ (0 ^ 0) ^ (1 ^ 1) ^ (2 ^ 3) ^ (3 ^ 4)
+                = (4 ^ 4) ^ (0 ^ 0) ^ (1 ^ 1) ^ (3 ^ 3)  &^ 2
+                = 0 ^ 0 ^ 0 ^ 0 ^ 2
+                = 2
+missing
+
+
+=4∧(0∧0)∧(1∧1)∧(2∧3)∧(3∧4)
+=(4∧4)∧(0∧0)∧(1∧1)∧(3∧3)∧2
+=0∧0∧0∧0∧2
+=2
+​
+
+
+
+
 
 
 */
 public class MissingNumber {
-
+    public static void main(String[] args) {
+        System.out.println(missingNumber(new int[]{94, 96, 97}));
+        // System.out.println(missingNumber(new int[]{0, 1}));
+        // System.out.println(missingNumber(new int[]{9,6,4,2,3,5,7,0,1}));
+        // System.out.println(missingNumber(new int[]{0}));
+    }
+    public static int missingNumber(int[] nums) {
+        int missing = 0;
+        System.out.println(missing);
+        for (int i = 0; i < nums.length; i++) {
+            missing ^= i ^nums[i];
+            System.out.println(missing);
+        }
+        return missing;
+    }
 }

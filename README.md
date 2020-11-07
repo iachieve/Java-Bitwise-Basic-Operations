@@ -35,7 +35,8 @@
 |  1 	|   1	|   1	|
 |  0 	|   1	|   0	|
 |  0	|   0	|   1	|
-
+    Note: XOR number with itself equals zero
+    
 ##### Bitwise NOT (~):
 
 | A  | ~A  |
