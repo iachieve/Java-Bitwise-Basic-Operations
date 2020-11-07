@@ -58,6 +58,12 @@
         System.out.println(2 << 4); //  32
         System.out.println(2 << 5); // 64
 ```
+
+##### Difference between >> and >> (right shift zeros):
+    1- >> fills LSB bit 0 for +ve and 1 for -ve numbers
+    2- >>> fills LSB bit 0 for both +ve and -ve numbers
+
+
 ##### Get Bit:
     1- Create mask by left shifting 1 by i numbers
     2- User AND operator
