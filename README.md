@@ -35,11 +35,5 @@
 |  1 | 0  |
 |  0 | 1  |
 
-```java
-// two's complement
-// ~(X)==(-X)-1
-System.out.println(~10) == -11;
-// -(10)-1 = -11
-```
 
 
