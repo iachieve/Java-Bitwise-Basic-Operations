@@ -35,7 +35,9 @@
 |  1 	|   1	|   1	|
 |  0 	|   1	|   0	|
 |  0	|   0	|   1	|
-    Note: XOR number with itself equals zero
+    Note: 
+    1- If we take XOR of zero and some bit, it return that bit ( a ^ 0 = a).
+    2- If we take XOR of two same bits, it will return 0 (a ^ a = 0).
     
 ##### Bitwise NOT (~):
 
